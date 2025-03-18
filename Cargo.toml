@@ -1,0 +1,28 @@
+[package]
+name = "mika-neon"
+version = "0.1.0"
+authors = ["daryl"]
+license = "ISC"
+edition = "2021"
+exclude = ["index.node"]
+
+[lib]
+crate-type = ["cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+qrcode = "0.13.0"
+image = "0.24.0"
+reqwest = "0.11.24"
+tokio = { version = "1", features = ["full"] }
+neon = "1"
+num_cpus = "1"
+js-sys = "0.3.68"
+regex = "1.10.6"
+serde = { version = "1.0.210", features = ["derive"] }
+serde_json = "1.0.128"
+actix-web = "3"
+actix-multipart="0.3"
+futures = "0.3"
+human_id = "0.1"
